@@ -2,32 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.Header-Gradient {
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.Shadows {
+  box-shadow: 0px 4px 40px 0px #0000001a;
+}
+
+.btn-Shadow {
+  box-shadow: 0px 4px 49px 0px #00000026;
+}
+.ReadMore {
+  background-image: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.UXDriven {
+  background: linear-gradient(225deg, #29272e 0%, #27272e 100%);
+}
+
+.InfoGadient {
+  background: linear-gradient(225deg, #68dbf2 0.01%, #509cf5 100%);
+}
+.bg-Tertiary {
+  background: linear-gradient(224.47deg, #ff92ae 8.18%, #ff3d9a 95.84%);
+}
+
+.bg-Success {
+  background: linear-gradient(225deg, #67e9f1 0%, #24e795 100%);
+}
+.bg-Warning {
+  background: linear-gradient(225deg, #ffef5e 0%, #f7936f 100%);
+}
+.bg-Testing {
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+}
+
+.bg-Secondary {
+  background: linear-gradient(225deg, #f1f1f5 0%, #e4ecf7 100%);
+}
+
+.Footer1 {
+  background: linear-gradient(225deg, #ffc656 0%, #f16063 100%);
+  border: 1px solid #ffffff;
+}
+
+.Hire {
+  background: linear-gradient(225deg, #29272e 0%, #27272e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Footer-Icon {
+  box-shadow: 0px 4px 14px 0px #00000026;
+}
+
+.Primary-bg {
+  border: 2px solid;
+  border-image-source: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+}
+
+.swiper-slide {
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
+  &.swiper-slide-active {
+    transform: scale(40px);
+    border: 1px solid #f76680;
+    border-radius: 10px;
+    background-color: #fafafa;
+    background-image: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    p {
+      -webkit-text-fill-color: #4a5568;
+    }
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.customersSwiper .swiper-slide.swiper-slide-active {
+  color: #a0aec0;
+  &.swiper-slide-active {
+    transform: scale(40px);
+    color: #57007b;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.customersSwiper .swiper-slide.swiper-slide-active p {
+  -webkit-text-fill-color: #4a5568;
+}
+
+.paginationBorder {
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+}
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
 }
